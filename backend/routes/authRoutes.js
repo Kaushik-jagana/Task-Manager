@@ -3,8 +3,7 @@ const express = require('express');
 const passport = require('passport');
 const router = express.Router();
 
-const dotenv = require('dotenv');
-
+dotenv.config();
 
 router.get(
   '/google',
