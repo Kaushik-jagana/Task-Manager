@@ -1,0 +1,176 @@
+.tasks-dashboard {
+    padding: 1rem;
+    background-color: #f4f4f9;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.task-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.task-column {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.task-column h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #2196F3;
+    text-align: center;
+}
+
+.task-card {
+    background-color: #e3f2fd;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.task-card h3 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.task-card p {
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+.task-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.task-actions button {
+    padding: 0.3rem 0.7rem;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.details-btn {
+    background-color: #2196F3;
+    color: white;
+}
+
+.edit-btn {
+    background-color: #ffc107;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+
+.add-task-btn {
+    background-color: #2196F3;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.add-task-btn:hover {
+    background-color: #1769aa;
+}
+
+
+.task-filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.task-filters input {
+    padding: 0.5rem;
+    width: 60%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.task-filters select {
+    padding: 0.5rem;
+    width: 30%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .task-columns {
+        flex-direction: column;
+    }
+
+    .task-filters {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .task-filters input,
+    .task-filters select {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .task-column {
+        margin-bottom: 1.5rem;
+    }
+
+    .task-card h3 {
+        font-size: 0.9rem;
+    }
+
+    .task-card p {
+        font-size: 0.8rem;
+    }
+
+    .task-actions button {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .task-filters {
+        text-align: center;
+    }
+
+    .task-filters input,
+    .task-filters select {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .task-columns {
+        gap: 0.5rem;
+    }
+
+    .task-column {
+        padding: 0.8rem;
+    }
+
+    .task-card {
+        padding: 0.7rem;
+    }
+
+    .add-task-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}
