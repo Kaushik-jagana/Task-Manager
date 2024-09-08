@@ -1,7 +1,10 @@
+const dotenv = require('dotenv');
 const express = require('express');
 const passport = require('passport');
-
 const router = express.Router();
+
+const dotenv = require('dotenv');
+
 
 router.get(
   '/google',
@@ -10,10 +13,10 @@ router.get(
 
 router.get(
   '/google/callback',
-  passport.authenticate('google', { failureRedirect: 'http://localhost:3000/' }),
+  passport.authenticate('google', { failureRedirect: process.env.Frontend }),
   (req, res) => {
     const token = req.user.generateJWT();  
-    res.redirect(`http://localhost:3000/tasks?token=${token}`);
+    res.redirect(`${process.env.Frontend}/tasks?token=${token}`);
   }
 );
 
