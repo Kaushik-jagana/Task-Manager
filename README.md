@@ -12,6 +12,10 @@ This is a Task Manager web application similar to Trello, allowing users to crea
 - Persistent user sessions with JWT authentication
 - User profile, task due dates, sorting, and search functionalities
 
+## View live App
+
+Hosted at **https://kaushik-task-manager.netlify.app/**
+
 ## Tech Stack
 
 ### Frontend:
